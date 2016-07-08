@@ -1,3 +1,4 @@
+[![Build Status](https://snap-ci.com/educodar/educodar.github.io/branch/dev/build_image)](https://snap-ci.com/educodar/educodar.github.io/branch/dev)
 [![Stories in Ready](https://badge.waffle.io/educodar/educodar.github.io.png?label=ready&title=Ready)](http://waffle.io/educodar/educodar.github.io)
 
 ---
