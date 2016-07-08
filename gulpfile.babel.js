@@ -274,9 +274,11 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
 
 gulp.task('deploy', ['default'], () => {
   return gulp.src('dist')
+    .pipe($.shell(['echo "\!dist/" >> .gitignore']))
     .pipe($.subtree({
       remote: 'origin',
       branch: 'master'
     }))
+    .pipe($.shell(['git checkout -- .gitignore']))
     .pipe($.clean());
 });
